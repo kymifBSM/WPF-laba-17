@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_laba_17.retard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_laba_17"
+        mc:Ignorable="d"
+        Title="retard" Height="450" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Label Content="Введите данные для записи в файл"/>
+            <TextBox x:Name="tb1"/>
+            <Button Content="Нажми" Click="Dima"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Label Content="Счётчик кол-ва строк, слов и символов каждой строки"/>
+            <Button Content="Нажми" Click="Istomin"/>
+
+            <Label Content="Количество строк: Ы"/>
+            <Label Content="Количество слов: А"/>
+            <Label Content="Количество символов: Б"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2">
+            <Label Content="Введите данные для поиска их в файле"/>
+            <TextBox x:Name="tb2"/>
+            <Button Content="Жмак"/>
+
+            <Label Content="Строки содержащие: NaN"/>
+        </StackPanel>
+    </Grid>
+</Window>
